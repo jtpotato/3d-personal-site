@@ -1,5 +1,6 @@
 "use client";
 
+// @ts-expect-error no types.
 import { useScrollPercentage } from "react-scroll-percentage";
 import { SceneCanvas } from "./components/Scene";
 
