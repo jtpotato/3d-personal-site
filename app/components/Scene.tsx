@@ -23,7 +23,7 @@ function AboutText() {
         anchorY={"top"}
       >
         {
-          "I&apos;m a student, developer and content creator\ninterested in new technologies and creating\ncool experiences."
+          "I'm a student, developer and content creator\ninterested in new technologies and creating\ncool experiences."
         }
       </Text>
       <Text
