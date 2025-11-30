@@ -11,6 +11,7 @@ interface ImageCardProps {
   url: string;
   position?: [number, number, number];
   rotation?: [number, number, number];
+  animationOffset?: number;
 }
 
 export default function ImageCard({
@@ -19,6 +20,7 @@ export default function ImageCard({
   url,
   position = [0, 0, 0],
   rotation = [0, 0, 0],
+  animationOffset = 0,
 }: ImageCardProps) {
   const imageRef = useRef<THREE.Mesh>(null);
   const groupRef = useRef<THREE.Group>(null);
@@ -27,7 +29,7 @@ export default function ImageCard({
   const { camera } = useThree();
 
   // Animate opacity based on camera distance to this card's position
-  useFrame(() => {
+  useFrame(({ clock }) => {
     const groupPosition = groupRef.current?.getWorldPosition(
       new THREE.Vector3()
     );
@@ -43,6 +45,31 @@ export default function ImageCard({
       const opacity = distance < 5 ? 1 : 1 - distance / 20;
       // @ts-expect-error opacity property exists
       imageRef.current.material.opacity = opacity;
+    }
+
+    // Floating animation with sine waves
+    if (groupRef.current) {
+      const time = clock.getElapsedTime() + animationOffset;
+
+      // Translate on X and Y axes
+      const translateX = Math.sin(time * 0.5) * 0.1;
+      const translateY = Math.sin(time * 0.7) * 0.1;
+
+      // Rotate on X and Y axes
+      const rotateX = Math.sin(time * 0.3) * 0.1;
+      const rotateY = Math.sin(time * 0.4) * 0.1;
+
+      groupRef.current.position.set(
+        position[0] + translateX,
+        position[1] + translateY,
+        position[2]
+      );
+
+      groupRef.current.rotation.set(
+        rotation[0] + rotateX,
+        rotation[1] + rotateY,
+        rotation[2]
+      );
     }
   });
 
