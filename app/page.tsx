@@ -1,3 +1,4 @@
+import { SocialIcon } from "react-social-icons";
 import Article from "./components/Article";
 
 export default function Home() {
@@ -13,6 +14,43 @@ export default function Home() {
         </p>
         {/* Socials bar */}
         <h2 className="font-bold mt-16 mb-4 text-gray-400">Socials</h2>
+        <div className="flex">
+          <SocialIcon
+            url="https://github.com/jtpotato"
+            target="_blank"
+            bgColor="transparent"
+            borderRadius="0%"
+            className="hover:bg-gray-800"
+          />
+          <SocialIcon
+            url="https://twitter.com/jtpotato_"
+            target="_blank"
+            bgColor="transparent"
+            borderRadius="0%"
+            className="hover:bg-gray-800"
+          />
+          <SocialIcon
+            url="https://www.instagram.com/jtpotato_/"
+            target="_blank"
+            bgColor="transparent"
+            borderRadius="0%"
+            className="hover:bg-gray-800"
+          />
+          <SocialIcon
+            url="https://www.youtube.com/@jtpotato"
+            target="_blank"
+            bgColor="transparent"
+            borderRadius="0%"
+            className="hover:bg-gray-800"
+          />
+          <SocialIcon
+            url="https://www.linkedin.com/in/joel-tan-97b3a2271/"
+            target="_blank"
+            bgColor="transparent"
+            borderRadius="0%"
+            className="hover:bg-gray-800"
+          />
+        </div>
         {/* Links to articles I'm in */}
         <h2 className="font-bold mt-16 mb-4 text-gray-400">Articles</h2>
         <div className="flex flex-col">

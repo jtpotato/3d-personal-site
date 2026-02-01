@@ -13,6 +13,7 @@
         "react": "19.2.0",
         "react-dom": "19.2.0",
         "react-scroll-percentage": "^4.3.2",
+        "react-social-icons": "^6.25.0",
         "three": "^0.181.2",
       },
       "devDependencies": {
@@ -802,6 +803,8 @@
     "react-reconciler": ["react-reconciler@0.31.0", "", { "dependencies": { "scheduler": "^0.25.0" }, "peerDependencies": { "react": "^19.0.0" } }, "sha512-7Ob7Z+URmesIsIVRjnLoDGwBEG/tVitidU0nMsqX/eeJaLY89RISO/10ERe0MqmzuKUUB1rmY+h1itMbUHg9BQ=="],
 
     "react-scroll-percentage": ["react-scroll-percentage@4.3.2", "", { "dependencies": { "@babel/runtime": "^7.7.2", "react-intersection-observer": "^8.25.1" }, "peerDependencies": { "react": "^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0" } }, "sha512-6uEumDSvfzdiI4mFAMp/GhXXztW9ImG2Jwk2frP/SXwn9rMBBmP6Ta/+ZaIetBLnz1bNQoEGjaV6YvRoqT8ThQ=="],
+
+    "react-social-icons": ["react-social-icons@6.25.0", "", { "dependencies": { "@babel/runtime": "^7.27.0" }, "peerDependencies": { "react": "16.x.x || 17.x.x || 18.x.x || 19.x.x", "react-dom": "16.x.x || 17.x.x || 18.x.x || 19.x.x" } }, "sha512-PN9UpIb+f2u9H2t6MOoybaCD88yvQH+f9z/BILlg+n9MRzSYPtDODPzLb5dCUeyQ42eYyGDPGPIVARLWz5UEjg=="],
 
     "react-use-measure": ["react-use-measure@2.1.7", "", { "peerDependencies": { "react": ">=16.13", "react-dom": ">=16.13" }, "optionalPeers": ["react-dom"] }, "sha512-KrvcAo13I/60HpwGO5jpW7E9DfusKyLPLvuHlUyP5zqnmAPhNc6qTRjUQrdTADl0lpPpDVU2/Gg51UlOGHXbdg=="],
 
