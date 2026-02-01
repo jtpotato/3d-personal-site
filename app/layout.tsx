@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jbMono.className} antialiased text-white`}>
+      <body
+        className={`${jbMono.className} antialiased text-white bg-gray-950`}
+      >
         {children}
       </body>
     </html>
