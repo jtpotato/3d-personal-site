@@ -8,8 +8,9 @@ const jbMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "jtpotato's Site",
-  description: "Hi! I'm Joel, a student, developer and content creator.",
+  title: "Joel Tan",
+  description:
+    "Student, developer and content creator, passionate about all things STEM and science communication.",
 };
 
 export default function RootLayout({
