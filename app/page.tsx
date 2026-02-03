@@ -23,7 +23,7 @@ export default function Home() {
             className="hover:bg-gray-800"
           />
           <SocialIcon
-            url="https://twitter.com/jtpotato_"
+            url="https://www.linkedin.com/in/joel-tan-97b3a2271/"
             target="_blank"
             bgColor="transparent"
             borderRadius="0%"
@@ -44,7 +44,14 @@ export default function Home() {
             className="hover:bg-gray-800"
           />
           <SocialIcon
-            url="https://www.linkedin.com/in/joel-tan-97b3a2271/"
+            url="https://www.tiktok.com/@jtpotato_"
+            target="_blank"
+            bgColor="transparent"
+            borderRadius="0%"
+            className="hover:bg-gray-800"
+          />
+          <SocialIcon
+            url="https://twitter.com/jtpotato_"
             target="_blank"
             bgColor="transparent"
             borderRadius="0%"
